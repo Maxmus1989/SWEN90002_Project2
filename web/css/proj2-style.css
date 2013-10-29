@@ -1,0 +1,167 @@
+/* 
+    Document   : proj2-style
+    Created on : Oct 6, 2013, 9:26:35 PM
+    Author     : Choong Teik Tan
+    Description: SWEN90002 Project 2 Style
+*/
+
+h1 {text-align: center}
+h2 {text-align: center}
+h3 {text-align: center}
+h4 {color: white; font-family: Arial; text-align: center;}
+p {color: white; font-family: Arial;}
+
+.center {text-align: center}
+.text-color-white {color: white;}
+.text-color-red {background-color: red;}
+.before-login-button {width:33%;}
+.button {position: absolute; margin-bottom: auto; }
+.ui-body-c, .ui-overlay-c { background:#444444; }
+
+.ui-hide-label.ui-br, .no-field-separator {
+    border-bottom-width: 0;
+}
+
+.ui-field-contain.ui-hide-label, .no-field-separator {
+    margin: 1em 0;
+    padding: 0;
+}
+
+.ui-header-fixed, .ui-footer-fixed {
+    z-index: 8 !important;
+}
+
+.memberpage .ui-header {
+  height: 41px;
+}
+
+.memberpage .ui-header h1 {
+  font-size: 0.8em;
+}
+
+#block-ui {
+    display: none;
+    cursor: wait;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: #CCCCCC;
+    opacity: 0.5;
+}
+
+textarea {
+    border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-color: #D0D0D0;
+    resize: none;
+}
+/*
+.bubbledLeft,.bubbledRight{
+margin-top: 3px;
+padding: 3px 5px 3px 5px;
+max-width: 80%;
+clear: both;
+border: 1px solid grey;
+}
+
+.bubbledLeft{
+float: left;
+margin-right: auto;
+border: 1px solid grey;
+border-radius: 5px 5px 5px 0px;
+-webkit-border-radius: 5px 5px 5px 0px;
+-moz-border-radius: 5px 5px 5px 0px;
+-o-border-radius: 5px 5px 5px 0px;
+-ms-border-radius: 5px 5px 5px 0px;
+}
+
+.bubbledRight{
+float: right;
+margin-left: auto;
+text-align: right;
+border: 1px solid grey;
+border-radius: 5px 5px 5px 0px;
+-webkit-border-radius: 5px 5px 5px 0px;
+-moz-border-radius: 5px 5px 5px 0px;
+-o-border-radius: 5px 5px 5px 0px;
+-ms-border-radius: 5px 5px 5px 0px;
+}
+
+.bubbledLeft, .bubbledRight { z-index: 1; }
+*/
+#message-contet { border: 1px solid lavender; width: 100%; height: 100%;}
+
+p.speech
+{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    border: 8px solid #666;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+}
+
+.bubble {
+	position:relative;
+	padding:15px 30px;
+	margin:0;
+	color:#000;
+	background:#f3961c; /* default background for browsers without gradient support */
+	/* css3 */
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f9d835), to(#f3961c));
+	background:-moz-linear-gradient(#f9d835, #f3961c);
+	background:-o-linear-gradient(#f9d835, #f3961c);
+	background:linear-gradient(#f9d835, #f3961c);
+	/* Using longhand to avoid inconsistencies between Safari 4 and Chrome 4 */
+	-webkit-border-top-left-radius:25px 50px;
+	-webkit-border-top-right-radius:25px 50px;
+	-webkit-border-bottom-right-radius:25px 50px;
+	-webkit-border-bottom-left-radius:25px 50px;
+	-moz-border-radius:25px / 50px;
+	border-radius:25px / 50px;
+	margin-top: 5px;
+}
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.bubble + p {
+	margin:10px 150px 2em 0;
+	text-align:right;
+	font-style:italic;
+}
+/* creates the larger triangle */
+.bubble:before {
+	content:"";
+	position:absolute;
+	bottom:-30px;
+	right:80px;
+	border-width:0 0 30px 50px;
+	border-style:solid;
+	border-color:transparent #f3961c;
+			/* reduce the damage in FF3.0 */
+ 			display:block;
+  			width:0;
+}
+/* creates the smaller triangle */
+.bubble:after {
+	content:"";
+	position:absolute;
+	bottom:-30px;
+	right:110px;
+	border-width:0 0 30px 20px;
+	border-style:solid;
+	border-color:transparent #fff;
+		/* reduce the damage in FF3.0 */
+ 			display:block;
+ 			width:0;
+}

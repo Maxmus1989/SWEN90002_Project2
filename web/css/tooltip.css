@@ -1,0 +1,202 @@
+/* 
+    Document   : tooltip
+    Created on : Oct 7, 2013, 1:57:17 AM
+    Author     : Choong Teik Tan
+    Description: Tooltip Style
+*/
+
+/*
+#tooltip
+{
+    text-align: center;
+    color: #fff;
+    background: #111;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+}
+
+#tooltip:after // triangle decoration *
+{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #111;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+#tooltip.top:after
+{
+    border-top-color: transparent;
+    border-bottom: 10px solid #111;
+    top: -20px;
+    bottom: auto;
+}
+
+#tooltip.left:after
+{
+    left: 10px;
+    margin: 0;
+}
+
+#tooltip.right:after
+{
+    right: 10px;
+    left: auto;
+    margin: 0;
+}
+*/
+abbr
+{
+    border-bottom: 1px dotted #111;
+    cursor: help;
+}
+
+#info
+{
+    width: 60px;
+    height: 60px;
+    background-color: rgba( 0, 0, 0, .05 );
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 auto 50px;
+}
+#info:hover
+{
+    background-color: rgba( 0, 0, 0, .1 );
+}
+#info abbr
+{
+    height: 100%;
+    font-size: 2.188em;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 1px rgba( 0, 0, 0, .25 );
+    color: #fff;
+    background: #84e100;
+    background: -webkit-gradient( linear, left top, left bottom, from( #84e100 ), to( #6fbc00 ) );
+    background: -webkit-linear-gradient( top, #84e100, #6fbc00 );
+    background: -moz-linear-gradient( top, #84e100, #6fbc00 );
+    background: -ms-radial-gradient( top, #84e100, #6fbc00 );
+    background: -o-linear-gradient( top, #84e100, #6fbc00 );
+    background: linear-gradient( top, #84e100, #6fbc00 );
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    cursor: help;
+    display: block;
+}
+#info
+{
+    text-decoration: none;
+}
+
+
+/*
+        TOOLTIP
+*/
+
+#tooltip
+{
+        font-family: Ubuntu, sans-serif;
+        font-size: 0.875em;
+        text-align: center;
+        text-shadow: 0 1px rgba( 0, 0, 0, .5 );
+        line-height: 1.5;
+        color: #fff;
+        background: #333;
+        background: -webkit-gradient( linear, left top, left bottom, from( rgba( 0, 0, 0, .6 ) ), to( rgba( 0, 0, 0, .8 ) ) );
+        background: -webkit-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+        background: -moz-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+        background: -ms-radial-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+        background: -o-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+        background: linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border-top: 1px solid #fff;
+        -webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+        -moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+        box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+        position: absolute;
+        z-index: 100;
+        padding: 15px;
+}
+#tooltip:after
+{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+    border-top-color: rgba( 0, 0, 0, .7 );
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+#tooltip.top:after
+{
+    border-top-color: transparent;
+    border-bottom: 10px solid #333;
+    border-bottom-color: rgba( 0, 0, 0, .6 );
+    top: -20px;
+    bottom: auto;
+}
+#tooltip.left:after
+{
+    left: 10px;
+    margin: 0;
+}
+#tooltip.right:after
+{
+    right: 10px;
+    left: auto;
+    margin: 0;
+}
+
+#container
+{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -200px;
+}
+
+@media screen and (max-width: 440px)
+{
+    #container
+    {
+        width: 100%;
+        position: static;
+        top: auto;
+        left: auto;
+        padding: 30px 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-height: 340px)
+{
+    #container
+    {
+        position: static;
+        top: auto;
+        left: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+}
